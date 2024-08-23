@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WordleFinder": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
