@@ -16,6 +16,7 @@ namespace WordleFinder
 
             Console.Write($"Length:{Words.Count}\n Enter The characters:");
             string i = Console.ReadLine();
+            Console.Write("\n");
 
             await p.GetAllLetters(Letters, i);
 
@@ -34,7 +35,7 @@ namespace WordleFinder
                 if (regex.IsMatch(word) && !HasDuplicateCharacters(word))
                 {
                     FoundWords.Add(word);
-                    Console.WriteLine($"The word '{word}' does not contain any of the specified characters and has no duplicates.");
+                    Console.WriteLine($"{word}");
                 }
             }
 
